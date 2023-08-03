@@ -1,0 +1,398 @@
+:root{
+    --color: #3E4689;
+}
+* {
+    font-size: 22px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    
+}
+.main {
+    display: grid;
+    height: 1700px;
+    text-align: center;
+    grid-template-columns: 100px auto 100px;
+}
+.h1 {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    height: 50px;
+}
+.navbar{
+    position: relative;
+    width: 0;
+    top: 20px;
+    left: 10px;
+}
+.nav-link{
+    margin: 15px;
+}
+
+
+
+/* logos */
+.logo {
+    margin: 40px;
+    height: 120px;
+}
+.logo__footer {
+    height: 60px;
+}
+
+
+
+/* header */
+header {
+    background-color: var(--color);
+    color: white;
+    padding: 30px;
+    height: 250px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    left: -60px; 
+    word-spacing: 20px;
+    width: 350px;
+    height: 1650px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 2;
+}
+
+
+/* footer */
+footer {
+    background-color: #3E4689;
+    height: 200px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+.derechos{
+    color: white;
+}
+
+
+
+
+/* index */
+.index__img {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    height: 700px;
+    width: 800px;
+    padding: 30px;
+    margin-top: 200px;
+}
+.index__p {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -400px;
+    text-align: justify;
+    height: 500px;
+    padding: 50px;
+}
+
+
+/* conocenos */
+.conocenos {
+    grid-column: 2;
+    margin-top: 150px;
+    height: 1500px;
+    padding: 100px;
+    text-align: justify;
+}
+.conocenos__ul {
+    background: none;
+    border: none;
+    margin: 30px;
+    text-align: justify;
+    position: relative;
+    top: 10px;
+}
+.conocenos__img {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 10px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+.conocenos__img--izquierda {
+    float: left;
+    left: -10px;
+    top: 30px;
+}
+.conocenos__img3--derecha {
+    bottom: 150px;
+}
+.mision{
+    position: relative;
+    top: 50px;
+} 
+
+
+
+/* productos */
+.productos {
+    grid-column: 2;
+    height: 1000px;
+    margin-top: 300px;
+    padding: 50px;
+    background-color: #15193D;
+    color: white;
+}
+.productos__img {
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 600px;
+}
+.ul--productos{
+    text-align: start;
+    list-style: none;
+}
+h3{
+    text-align: start;
+    font-size: 22px;
+}
+.sect--productos{
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
+}
+.flecha{
+    transform: scaleX(-1);
+}
+
+
+
+/* galeria */
+.direc{
+    background: none;
+    border: none;
+    height: 900px;
+    position: absolute;
+    left: 90%;
+}
+.direc--atras{
+    transform: scaleX(-1);
+    left: 0%;
+    right: 90%;
+    z-index: 1;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 300px;
+    width: 1000px;
+    height: 800px;
+}
+#imagen {
+    position: absolute;
+    left: -12%;
+    width: 900px;
+    height: 900px;
+    background-size: cover;
+    z-index: 0;
+}
+
+
+
+/* contactenos */
+.contactenos {
+    margin-top: 200px;
+    padding: 50px;
+    height: 1300px;
+    grid-column: 2;
+    text-align: start;
+}
+.contactenos--info {
+    color: black;
+    display: inline-block;
+    margin: 10px;
+}
+.contactenos--icono {
+    width: 25px;
+    height: 25px;
+}
+.mapa {
+    width: 700px;
+    height: 1000px;
+    margin: 10px;
+}
+
+
+
+@media (min-device-width: 575px) {
+    *{
+        font-size: 16px;
+    }
+    header, footer{
+        height: 200px;
+    }
+    .logo{
+        margin: 10px;
+        margin-left: 100px;
+    }
+    .menu{
+        background: none;
+        border: none;
+        width: 0px;
+        height: 0px;
+    }
+    .navbar{
+        position: absolute;
+        top: 5%;
+        left: 70%;
+    }
+    .nav-link{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        margin: 0px;
+    }
+    .main{
+        height: 100%;
+        grid-template-columns: 10% auto 10%;
+        text-align: center;
+    }
+    .nav-link:hover{
+        color: white;
+        transition: border-bottom, font-size 1s;
+        border-bottom: 5px solid white;
+        font-size: 24px;
+        border-radius: 5px;
+    }
+
+
+    /* index */
+    .main--index{
+        display: grid;
+        grid-template-columns: 10% auto 5% auto 10%;
+    }
+    .index__img{
+        width: 800px;
+        height: 500px;
+        grid-column: 2;
+    }
+    .index__p{
+        margin-bottom: 500px;
+        text-align: justify;
+        height: 0px;
+        padding: 0px;
+        grid-column: 4;
+    } 
+
+
+    /* conocenos */
+    .conocenos{
+        width: 1100px;
+        position: relative;
+        left: 10%;
+    }
+    .conocenos__img{
+        width: 350px;
+        height: 350px;
+    }
+    .enfoque{
+        position: relative;
+        top: 250px;
+        right: 300px;
+    }
+    .conocenos__img3--derecha {
+        bottom: 50px;
+    }
+    .mision{
+        top: 100px;
+    }
+    
+
+
+    /* productos */
+    .main2{
+        max-width: 1500px;
+    }
+    .productos{
+        
+        margin-top: 150px;
+        margin-bottom: 100px;
+        padding: 50px;
+        width: 500px;
+        height: 750px;
+        position: relative;
+        left: 500px;
+    } 
+    .productos__img {
+        padding: 10px;
+        margin-bottom: 30px;
+        width: 400px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .sect--productos{
+        margin-top: 30px;
+        margin-right: 0px;
+        height: 0px;
+    }
+    .p{
+        margin-left: 10%;
+    }
+    .flecha{
+        transform: scaleX(-1);
+        position: relative;
+        left: 250px;
+    }
+
+
+    /* galeria */
+    .direc{
+        height: 600px;
+        left: 70%;
+        width: 100px;
+    }
+    .direc--atras{
+        transform: scaleX(-1);
+        left: 20%;
+    }
+    .container {
+        position: static;
+        margin-top: 200px;
+        height: 800px;
+    }
+    #imagen {
+        position: relative;
+        left: 15%;
+        width: 600px;
+        height: 600px;
+    } 
+
+
+    /* contactenos */
+    .contactenos{
+        height: 100%;
+        width: 100%;
+        grid-column: 2;
+    }
+    .mapa{
+        position: relative;
+        bottom: 20%;
+        left: 35%;
+        width: 800px;
+        height: 600px;
+        margin: 5px;
+    }
+}
